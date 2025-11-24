@@ -31,9 +31,9 @@ if page == '🏠 Home':
 col1, col2, col3 = st.collums(3)
 
 with col1:
-   st.metric('GPA', '3.8', '📚')
+   st.metric('GPA', '2.6', '📚')
 with col2:
-   st.metric('Projects', '5', '💻')
+   st.metric('Project', '1', '💻')
 with col3:
    st.metric('Skills', '10+', '🚀')
 
