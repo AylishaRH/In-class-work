@@ -4,7 +4,7 @@ from datetime import datetime
 
 # Page Config
 st.set_page_config(
-  page_title ='Avinash Jairam | Portfolio',
+  page_title ='Aylisha Roper-Haskins | Portfolio',
   page_icon='🎯',
   layout = 'wide'
 )
@@ -28,7 +28,6 @@ if page == '🏠 Home':
   st.markdown('<p class="sub-header">Aspiring Tech Professional | Medgar Evers College</p>', unsafe_allow_html=True)
 
 # Three Columns for stats
-
 col1, col2, col3 = st.collums(3)
 
 with col1:
