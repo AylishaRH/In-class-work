@@ -32,26 +32,26 @@ col1, col2, col3 = st.collums(3)
 
 with col1:
    st.metric('GPA', '3.8', '📚')
-  with col2:
-      st.metric('Projects', '5', '💻')
-  with col3:
-      st.metric('Skills', '10+', '🚀')
+with col2:
+   st.metric('Projects', '5', '💻')
+with col3:
+   st.metric('Skills', '10+', '🚀')
 
-  st.write('---')
+st.write('---')
 
-  # Introduction with columns
-  col1, col2 = st.columns([2,1])
-  with col1:
-    st.subheader('Welcome to my digital space!👋')
-    st.write('''
-                I am a Computer Information Systems student passionate about web development and emerging technologies. Currently learning
-                HTML, CSS, JavaScript, and Python to build innovative solutions.
+# Introduction with columns
+col1, col2 = st.columns([2,1])
+with col1:
+  st.subheader('Welcome to my digital space!👋')
+  st.write('''
+              I am a Computer Information Systems student passionate about web development and emerging technologies. Currently learning
+              HTML, CSS, JavaScript, and Python to build innovative solutions.
             
-                🎯 **Current Focus:** Building interactive web applications with Streamlit
+              🎯 **Current Focus:** Building interactive web applications with Streamlit
             
-                📚 **Currently Learning:** Internet and Emergin Technologies (CIS 211)
+              📚 **Currently Learning:** Internet and Emergin Technologies (CIS 211)
             
-                🌱 **Fun Fact:** I can solve a Rubik's cube in under 2 minutes!
+               🌱 **Fun Fact:** I can solve a Rubik's cube in under 2 minutes!
             ''')
   with col2:
     # Placeholder for image
