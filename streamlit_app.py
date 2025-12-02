@@ -25,7 +25,7 @@ page = st.sidebar.radio('Go to',
 # Home Page
 if page == '🏠 Home':
   st.markdown('<p class="main-header">Aylisha Haskins</p>', unsafe_allow_html=True)
-  st.markdown('<p class="sub-header">Aspiring Tech Professional | Medgar Evers College</p>', unsafe_allow_html=True)
+  st.markdown('<p class="sub-header">Business Addministration student | Medgar Evers College</p>', unsafe_allow_html=True)
 
 # Three Columns for stats
 col1, col2, col3 = st.collums(3)
@@ -44,8 +44,10 @@ col1, col2 = st.columns([2,1])
 with col1:
   st.subheader('Welcome to my digital space!👋')
   st.write('''
-              I am a Computer Information Systems student passionate about web development and emerging technologies. Currently learning
-              HTML, CSS, JavaScript, and Python to build innovative solutions.
+              I am a Business Administration student at Medgar Evers College with a passionate 
+              interest in Computer Information System and technonlogy. I am building my skills
+              in Python, Streamlit, and data to create real-world, useful tools. Some day I 
+              will need it in my line of profession. 
             
               🎯 **Current Focus:** Building interactive web applications with Streamlit
             
@@ -67,20 +69,20 @@ elif page == '🤠 About Me':
 
   with st.expander('2025 - Present: Medgar Evers College'):
     st.write('''
-                - Major: Computer Information Systems
-                - Relevant Coursework: Internet & Emerging Technologies, Programming, Database Systems, AI
-                - Activities: Track Team, Volleyball Team, Hackathon participant
+                - Major: Business Administration 
+                - Relevant Coursework: Principles of Accounting, Introudction to Statistics, Internet & Emergin Technogloy, Human Resource Managment, International Business
+                - Activities: Dance and photography
             ''')
 
-  with st.expander('2023 - 2025: NYC Museum School'):
+  with st.expander('2019 - 2023: Young Women Leadership'):
     st.write('''
+                - Advanced regents diaploma
                 - Graduated with honors
-                - AP Computer Science A (Score: 5)
-                - Founded Coding Club
+                - Cheerleading
             ''')
 
   st.subheader('Interests & Hobbies 🏀')
-  interests = ['Web Development', 'AI/Machine Learning', 'Photography', 'Basketball', 'Travel', 'Baseball']
+  interests = ['Business & Entrepreneurship', 'Fashion & styling ', 'Content Creating', 'Photography', 'Travel', 'Dance']
 
   # Display the interests in columns
   cols = st.columns(3)
@@ -90,36 +92,45 @@ elif page == '🤠 About Me':
       
 elif page == '💼 Projects':
   st.title('My Projects')
-  st.write('Here are some projects I have worked on:')
+  st.write('Here are some projects I have worked on or I am planning:')
 
   # Project 1
   with st.container():
     col1, col2 = st.columns([1, 2])
   
     with col1:
-        st.image('https://iprx-cms-content.ams1.vultrobjects.com/Blog_How_To_Crawl_4_capcha_ded9206d5f.png', use_column_width = True)
-
+        st.image('https://www.publicdomainpictures.net/pictures/90000/nahled/calculator-black-clipart.jpg', use_column_width = True)
     with col2:
-        st.subheader('🛒 E-Commerce Price Tracker')
-        st.write('Python web scraper that monitors Amazon prices and sends alerts')
-        st.caption('**Technologies:** Python, BeautifulSoup, Streamlit')
+        st.subheader('🛒 Interactive Portfolio (CIS 211)')
+        st.write('''
+            This Streamlit wed app (the site you are on now) showcases my cousrework,
+            skills, and interests. It's part of my CIS 211 project and also a real portfolio
+            I can share with anybody.
+        ''')
+        st.caption('**Technologies:** Python, GitHub, Streamlit')
 
 
   # Project 2 
   with st.container():
     col1, col2 = st.columns([1,2])
     with col1:
-      st.image('https://www.publicdomainpictures.net/pictures/90000/nahled/calculator-black-clipart.jpg', use_column_width = True)
+      st.image('https://static.vecteezy.com/system/resources/previews/014/680/687/non_2x/online-shopping-or-payment-via-mobile-phone-concept-flat-illustration-in-cartoon-style-vector.jpg', 
+               use_column_width = True
+              )
+      
     with col2:
-      st.subheader('📊 Student Grade Calulator')
-      st.write('Interactive web app for calculating and visualizing grades')
-      st.caption('**Technologies:** Python, Pandas, Plotly')
+      st.subheader('📊 Depop/ Online Reselling Plan')
+      st.write('''
+          A small business plan for selling clothes and items online, including
+          pricing, photos, shipping, and communication. 
+      ''')
+      st.caption('**Skills:** Customer Service, Pricing, Social Media')
 
 elif page == '🛠 Skills':
-  st.title('Technical Skills')
+  st.title('Technical & Professional Skills')
 
   # Skills with progress bars
-  st.subheader('Programming Languages')
+  st.subheader('Programming & Technical Skills')
 
   skills_data = {
     'Python' : 85,
@@ -142,20 +153,22 @@ elif page == '🛠 Skills':
   with col1:
     st.success('Excel')
     st.info('Word')
-    st.warning('Access')
+    st.warning('Powerpoint')
 
   with col2:
-    st.success('PowerPoint')
+    st.success('Canva')
     st.info('Google Docs')
     st.warning('ChatGPT/AI Tools')
     
   with col3:
-    st.success('Presentations')
-    st.info('Writing')
-    st.warning('Social Media')
+    st.success('Writing')
+    st.info('Social Media')
+    st.warning('Presentation Skills')
 
 elif page == '📝 Resume':
   st.title('Resume')
+
+  st.write('You can download my resume using the button below .')
 
   # Read PDF from my GitHub repository
   with open('my_resume.pdf', 'rb') as pdf_file:
@@ -164,7 +177,7 @@ elif page == '📝 Resume':
   st.download_button(
     label ='🔻 Download Full Resume (PDF)',
     data = PDFbyte,
-    file_name = 'my_resume.pdf',
+    file_name = 'Resume (2).pdf',
     mime ='application/pdf'
   )
 
@@ -177,13 +190,9 @@ elif page == '📩 Contact':
     st.subheader('Send me a message.')
 
     st.write('''
-        📧 **Email:** yourname@email.com
+        📧 **Email:** aylishahaskins13@gmail.com
 
-        🏢 **LinkedIn:** [linkedin.com/in/yourname](https://linkedin.com)
-
-        👩‍💻 **Github:** [https://github.com/avinashjairam](https://github.com)
-
-        📷 **Instagram:** [@yourhandle](https://instagram.com)
+        👩‍💻 **Github:** [https://github.com/AylishaRH](https://github.com)
 
     ''')
 
@@ -195,8 +204,7 @@ elif page == '📩 Contact':
         [
             '👩‍💻 Coding',
             '📕 Studying',
-            '☕ On a coffee break',
-            '🎮 Gaming',
+            '🎮 Relaxing',
             '😴 Sleeping'
         ]
     )
@@ -207,7 +215,7 @@ elif page == '📩 Contact':
     # Footer
     st.write('---')
     st.markdown(
-        f'<center>Made with 💗 using Streamlit | © {datetime.now().year} Avinash Jairam </center>',
+        f'<center>Made with 💗 using Streamlit | © {datetime.now().year} Aylisha Roper-Haskins </center>',
         unsafe_allow_html = True
     )
     
