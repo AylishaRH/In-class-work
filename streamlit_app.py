@@ -128,7 +128,7 @@ elif page == '👜 Projects':
         ''')
         st.caption('**Skills:** Customer Service, Pricing, Social Media')
   
-  elif page == '🛠 Skills':
+elif page == '🛠 Skills':
     st.title('Technical & Professional Skills')
 
     # Skills with progress bars
@@ -167,7 +167,7 @@ elif page == '👜 Projects':
       st.info('Social Media')
       st.warning('Presentation Skills')
   
-  elif page == '📝 Resume':
+elif page == '📝 Resume':
     st.title('Resume')
   
     st.write('You can download my resume using the button below .')
@@ -183,7 +183,7 @@ elif page == '👜 Projects':
       mime ='application/pdf'
     )
   
-  elif page == '📩 Contact':
+elif page == '📩 Contact':
     st.title("Let's Connect!")
   
     col1, = st.columns(1)
