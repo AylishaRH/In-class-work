@@ -91,7 +91,7 @@ elif page == '💕About':
       with cols[i % 3]:
         st.info(f'🔷 {interest}')
       
-  elif page == '👜 Projects':
+elif page == '👜 Projects':
     st.title('My Projects')
     st.write('Here are some projects I have worked on or I am planning:')
 
