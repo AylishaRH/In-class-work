@@ -53,7 +53,7 @@ with col1:
             
               📚 **Currently Learning:** Internet and Emergin Technologies (CIS 211)
             
-               🌱 **Fun Fact:** I can solve a Rubik's cube in under 2 minutes!
+               🌱 **Fun Fact:** I like to make beats
             ''')
   with col2:
     # Placeholder for image
