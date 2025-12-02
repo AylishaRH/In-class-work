@@ -21,11 +21,11 @@ st.markdown('''
 st.sidebar.title('📍 Navigation')
 page = st.sidebar.radio(
     'Go to',
-    ['🏠 Home', '🤠 About', ' 💼 Projects', '🛠 Skills' ,'📝 Resume', '📩 Contact' ]
+    ['🏡 Home', '💕 About', '👜 Projects', '🛠 Skills' ,'📝 Resume', '💌 Contact' ]
 )
 
 # Home Page
-if page == '🏠 Home':
+if page == '🏡 Home':
   st.markdown('<p class="main-header">Aylisha Haskins</p>', unsafe_allow_html=True)
   st.markdown('<p class="sub-header">Business Addministration student | Medgar Evers College</p>', unsafe_allow_html=True)
 
@@ -37,7 +37,7 @@ with col1:
 with col2:
    st.metric('Project', '2', '💻')
 with col3:
-   st.metric('Skills', '5', '🚀')
+   st.metric('Skills', '5', '🧠')
 
 st.write('---')
 
@@ -55,14 +55,14 @@ with col1:
             
               📚 **Currently Learning:** Internet and Emergin Technologies (CIS 211)
             
-               🌱 **Fun Fact:** I like to make beats
+              🎶 **Fun Fact:** I like to make beats
             ''')
   with col2:
     # Placeholder for image
     st.image('https://raw.githubusercontent.com/avinashjairam/cis211_project1/refs/heads/main/grumpy_cat.jfif', use_column_width=True)
 
 # About Page
-elif page == '🤠 About Me':
+elif page == '💕 About':
 
   st.title('About Me')
 
@@ -83,7 +83,7 @@ elif page == '🤠 About Me':
                 - Cheerleading
             ''')
 
-  st.subheader('Interests & Hobbies 🏀')
+  st.subheader('Interests & Hobbies 👩🏾‍💼')
   interests = ['Business & Entrepreneurship', 'Fashion & styling ', 'Content Creating', 'Photography', 'Travel', 'Dance']
 
   # Display the interests in columns
@@ -92,7 +92,7 @@ elif page == '🤠 About Me':
     with cols[i % 3]:
       st.info(f'🔷 {interest}')
       
-elif page == '💼 Projects':
+elif page == '👜 Projects':
   st.title('My Projects')
   st.write('Here are some projects I have worked on or I am planning:')
 
@@ -103,9 +103,9 @@ elif page == '💼 Projects':
     with col1:
         st.image('https://www.publicdomainpictures.net/pictures/90000/nahled/calculator-black-clipart.jpg', use_column_width = True)
     with col2:
-        st.subheader('🛒 Interactive Portfolio (CIS 211)')
+        st.subheader('🗂️ Interactive Portfolio (CIS 211)')
         st.write('''
-            This Streamlit wed app (the site you are on now) showcases my cousrework,
+            This Streamlit wed app (the site you are on now) showcases my coursework,
             skills, and interests. It's part of my CIS 211 project and also a real portfolio
             I can share with anybody.
         ''')
@@ -121,7 +121,7 @@ elif page == '💼 Projects':
               )
       
     with col2:
-      st.subheader('📊 Depop/ Online Reselling Plan')
+      st.subheader('🛍️ Depop/ Online Reselling Plan')
       st.write('''
           A small business plan for selling clothes and items online, including
           pricing, photos, shipping, and communication. 
@@ -204,10 +204,10 @@ elif page == '📩 Contact':
     status = st.selectbox(
         "I'm currently:",
         [
-            '👩‍💻 Coding',
             '📕 Studying',
-            '🎮 Relaxing',
-            '😴 Sleeping'
+            '🧘🏾‍♀️ Relaxing',
+            '📸 Photography'
+            '📺 Watching TV'
         ]
     )
 
