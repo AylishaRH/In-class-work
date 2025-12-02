@@ -29,40 +29,40 @@ if page == '🏡 Home':
   st.markdown('<p class="main-header">Aylisha Haskins</p>', unsafe_allow_html=True)
   st.markdown('<p class="sub-header">Business Addministration student | Medgar Evers College</p>', unsafe_allow_html=True)
 
-# Three Columns for stats
-col1, col2, col3 = st.collums(3)
+  # Three Columns for stats
+  col1, col2, col3 = st.collums(3)
 
-with col1:
-   st.metric('GPA', '2.6', '📚')
-with col2:
-   st.metric('Project', '2', '💻')
-with col3:
-   st.metric('Skills', '5', '🧠')
-
-st.write('---')
-
-# Introduction with columns
-col1, col2 = st.columns([2,1])
-with col1:
-  st.subheader('Welcome to my digital space!👋')
-  st.write('''
-              I am a Business Administration student at Medgar Evers College with a passionate 
-              interest in Computer Information System and technonlogy. I am building my skills
-              in Python, Streamlit, and data to create real-world, useful tools. Some day I 
-              will need it in my line of profession. 
-            
-              🎯 **Current Focus:** Building interactive web applications with Streamlit
-            
-              📚 **Currently Learning:** Internet and Emergin Technologies (CIS 211)
-            
-              🎶 **Fun Fact:** I like to make beats
-            ''')
+  with col1:
+     st.metric('GPA', '2.6', '📚')
   with col2:
-    # Placeholder for image
-    st.image('https://raw.githubusercontent.com/avinashjairam/cis211_project1/refs/heads/main/grumpy_cat.jfif', use_column_width=True)
+     st.metric('Project', '2', '💻')
+  with col3:
+     st.metric('Skills', '5', '🧠')
 
-# About Page
-elif page == '💕About':
+  st.write('---')
+
+  # Introduction with columns
+  col1, col2 = st.columns([2,1])
+  with col1:
+    st.subheader('Welcome to my digital space!👋')
+    st.write('''
+                I am a Business Administration student at Medgar Evers College with a passionate 
+                interest in Computer Information System and technonlogy. I am building my skills
+                in Python, Streamlit, and data to create real-world, useful tools. Some day I 
+                will need it in my line of profession. 
+            
+                🎯 **Current Focus:** Building interactive web applications with Streamlit
+            
+                📚 **Currently Learning:** Internet and Emergin Technologies (CIS 211)
+            
+                🎶 **Fun Fact:** I like to make beats
+             ''')
+    with col2:
+      # Placeholder for image
+      st.image('https://raw.githubusercontent.com/avinashjairam/cis211_project1/refs/heads/main/grumpy_cat.jfif', use_column_width=True)
+
+  # About Page
+  elif page == '💕About':
    st.title('About Me')
 
   # Timeline of my Professional Journey
