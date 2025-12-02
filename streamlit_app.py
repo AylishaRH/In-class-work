@@ -62,11 +62,11 @@ if page == '🏡 Home':
       st.image('https://raw.githubusercontent.com/avinashjairam/cis211_project1/refs/heads/main/grumpy_cat.jfif', use_column_width=True)
 
   # About Page
-  elif page == '💕About':
+elif page == '💕About':
     st.title('About Me')
 
     # Timeline of my Professional Journey
-    st.subheader('My Journey 🗺️')
+    st.subheader('My Journey 🌅')
 
     with st.expander('2023 - Present: Medgar Evers College'):
       st.write('''
