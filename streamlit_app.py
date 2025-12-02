@@ -19,8 +19,10 @@ st.markdown('''
 
 # Sidebar
 st.sidebar.title('📍 Navigation')
-page = st.sidebar.radio('Go to',
-                        ['🏠 Home', '🤠 About', ' 💼 Projects', '🛠 Skills' ,'📝 Resume', '📩 Contact' ])
+page = st.sidebar.radio(
+    'Go to',
+    ['🏠 Home', '🤠 About', ' 💼 Projects', '🛠 Skills' ,'📝 Resume', '📩 Contact' ]
+)
 
 # Home Page
 if page == '🏠 Home':
@@ -33,9 +35,9 @@ col1, col2, col3 = st.collums(3)
 with col1:
    st.metric('GPA', '2.6', '📚')
 with col2:
-   st.metric('Project', '1', '💻')
+   st.metric('Project', '2', '💻')
 with col3:
-   st.metric('Skills', '10+', '🚀')
+   st.metric('Skills', '5', '🚀')
 
 st.write('---')
 
@@ -67,7 +69,7 @@ elif page == '🤠 About Me':
   # Timeline of my Professional Journey
   st.subheader('My Journey 🗺️')
 
-  with st.expander('2025 - Present: Medgar Evers College'):
+  with st.expander('2023 - Present: Medgar Evers College'):
     st.write('''
                 - Major: Business Administration 
                 - Relevant Coursework: Principles of Accounting, Introudction to Statistics, Internet & Emergin Technogloy, Human Resource Managment, International Business
