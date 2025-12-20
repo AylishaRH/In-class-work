@@ -206,7 +206,7 @@ elif page == '💌 Contact':
           [
               '📕 Studying',
               '🧘🏾‍♀️ Relaxing',
-              '📸 Photography'
+              '📸 Photography',
               '📺 Watching TV'
           ]
       )
