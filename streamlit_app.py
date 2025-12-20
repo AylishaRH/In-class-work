@@ -62,7 +62,7 @@ if page == '🏡 Home':
       st.image('https://raw.githubusercontent.com/avinashjairam/cis211_project1/refs/heads/main/grumpy_cat.jfif', use_column_width=True)
 
   # About Page
-elif page == '💕About':
+elif page == '💕 About':
     st.title('About Me')
 
     # Timeline of my Professional Journey
@@ -183,7 +183,7 @@ elif page == '📝 Resume':
       mime ='application/pdf'
     )
   
-elif page == '📩 Contact':
+elif page == '💌 Contact':
     st.title("Let's Connect!")
   
     col1, = st.columns(1)
